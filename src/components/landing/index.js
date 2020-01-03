@@ -3,14 +3,15 @@ import Styled from 'styled-components';
 import Img from '../../images/pro1.jpg'
 
 const LandingRow = Styled.div`
-    positon:relative;
+    /* positon:relative; */
 
 .landa {
-    background-image:url("../images/pro1.jpg");
+    background-image:url(${Img});
     color: #fff;
     height:45vh;
+    position:relative;
 }
-/* .landa:after {
+.landa:before {
     background-color: rgba(8,9,58,0.6);
     position: absolute;
     width: 100%;
@@ -18,13 +19,15 @@ const LandingRow = Styled.div`
     left: 0;
     content: "";
     height: 45vh;
-} */
+}
 
 .land-body{
-    dispaly:flex;
+    display:flex;
     align-items:center;
     justify-content:center;
-    color:white;
+    flex-direction:column;
+    color:green;
+    z-index:50;
 }
 .l-header{
     font-size:2rem;

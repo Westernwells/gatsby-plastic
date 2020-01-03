@@ -94,7 +94,7 @@ color:white;
 const index =() =>{
     return(
         <AboutCon>
-        <Landing/>
+        <Landing header="Welcome To Plastic Pallet"/>
         <div className="mini">
         <Who>
         <p className="who-header">Who We Are</p>
