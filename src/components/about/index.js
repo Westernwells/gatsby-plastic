@@ -3,6 +3,8 @@ import Styled from 'styled-components'
 import Faq from './Faq'
 import Services from '../home/Services'
 import Landing from '../landing/index'
+import MiniMap from './MiniMap'
+import OurCustomers from '../home/OurCustomers'
 const AboutCon = Styled.div`
 width:100%;
 .mini{
@@ -10,7 +12,7 @@ width:100%;
 }
 `;
 const Who = Styled.div`
-width:98%;
+/* width:98%; */
 margin:0 auto;
 padding:20px 0;
 background-color:${props => props.theme.primary};
@@ -29,7 +31,7 @@ color:white;
 const Choose = Styled.div`
 background-color:${props=>props.theme.primary};
 color:white;
-width:98%;
+/* width:98%; */
 margin:0 auto;
 padding:20px 0;
 .choose-header{
@@ -132,14 +134,9 @@ const index =() =>{
                 </div>
                 </div>
                 </Choose>
-                <Customer>
-                <p className="cus-header">
-                Our Customers
-                </p>
-                <div className="cuses">
-                <p className="cus">Google</p></div>
-                </Customer>
+               <OurCustomers />
                 <Faq />
+                <MiniMap />
                 </div>
                 </AboutCon>
     )

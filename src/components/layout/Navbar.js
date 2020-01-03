@@ -37,6 +37,8 @@ return(
     <ul>
     <li><Link className="link" to="/">Home</Link></li>
     <li><Link className="link" to="/product">Product</Link></li>
+    <li><Link className="link" to="/cat">Category</Link></li>
+
     <li><Link className="link" to="/about">About</Link></li>
     <li><Link className="link" to="/contact">Contact us</Link></li>
     </ul></div>

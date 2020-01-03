@@ -5,6 +5,7 @@ const WpRow = Styled.div`
 width:100%;
 background-color:white;
 color:${props =>props.theme.primary};
+margin:20px 0;
 .wp-header{
     font-size:1.5rem;
     font-weight:bold;
@@ -20,6 +21,7 @@ color:${props =>props.theme.primary};
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-direction:column;
 
 }
 .prov-header{

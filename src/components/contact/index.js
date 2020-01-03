@@ -28,9 +28,18 @@ margin:5px 0;
 const CoRow = Styled.div`
 display:grid;
 grid-template-columns:60% 30%;
+padding:0 20px;
+
+
 `;
 
 const CoForm =Styled.div`
+.co-header{
+    font-size:1.4rem;
+    font-weight:bold;
+    color:${props=>props.theme.primary};
+    margin:10px 0;
+}
 .header{
     display:grid;
     grid-template-column:25% 1fr;
@@ -120,8 +129,10 @@ const index = ()=>{
 return(
     <>
     <Landing />
+
 <CoRow>
 <CoForm>
+<p className="co-header">Make Enquiry</p>
 <div className="header">
 <div className="header-l">
 </div>
