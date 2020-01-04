@@ -1,12 +1,13 @@
 import React from 'react'
 import Styled from 'styled-components'
-
+import ProductCard from './ProductCard';
+import Landing from '../landing/index'
 const Container = Styled.div`
-width:100%;
+/* width:100%; */
 `;
 const CatDetRow = Styled.div`
 background-color:white;
-width:100%;
+/* width:100%; */
 padding:20px;
 .cat-title{
     font-size:2rem;
@@ -27,20 +28,30 @@ font-size:1.5rem;
 `;
 
 const ProdListRow = Styled.div`
-width:100%;
+/* width:100%; */
 background-color: ${props => props.theme.primary};
 padding:20px 10%;
 
 .product-header{
     font-size:1.5rem;
     font-weight:bold;
+    text-align:center;
+    color:white;
+}
+.product-list{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+grid-column-gap:20px;
+justify-content:center;
 }
 `;
 
 const Index =()=>{
     return(
         <Container>
+        <Landing />
 <CatDetails/>
+<ProdList />
 </Container>
     )
 }
@@ -59,7 +70,13 @@ const CatDetails =()=>{
 const ProdList =()=>{
     return(
         <ProdListRow>
+        <p className="product-header">Products</p>
+        <div className="product-list">
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
         
+        </div>
         </ProdListRow>
     )
 }

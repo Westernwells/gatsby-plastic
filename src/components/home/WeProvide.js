@@ -1,6 +1,6 @@
 import React from 'react'
 import Styled from 'styled-components'
-
+import Img1 from '../../images/pro1.jpg'
 const WpRow = Styled.div`
 width:100%;
 background-color:white;
@@ -25,12 +25,15 @@ margin:20px 0;
 
 }
 .prov-header{
-fot-size:1.2rem;
+font-size:1.2rem;
 font-weight:bold;
+margin:5px 0;
 }
 .prov-image{
-height:250px;
-width:300px;
+height:200px;
+width:250px;
+border-radius:5px;
+margin:5px 0;
 }
 .prov-text{
 text-align:center;
@@ -44,19 +47,19 @@ const WeProvide = ()=>{
 {/*ANother one*/}
 <div className="prov-body">
 <p className="prov-header">Moving Company</p>
-<image className="prov-image" src="" alt="Product Image"></image>
+<img className="prov-image" src={Img1} alt="Product Image"></img>
 <p className="prov-text">Retailers can enjoy the high quality and competitive price of our plastic products,and we had build a good relationship with retails across the world</p>
 </div>
 {/*ANother one*/}
 <div className="prov-body">
 <p className="prov-header">Moving Company</p>
-<image className="prov-image" src="" alt="Product Image"></image>
+<img className="prov-image" src={Img1} alt="Product Image"></img>
 <p className="prov-text">Retailers can enjoy the high quality and competitive price of our plastic products,and we had build a good relationship with retails across the world</p>
 </div>
 {/*ANother one*/}
 <div className="prov-body">
 <p className="prov-header">Moving Company</p>
-<image className="prov-image" src="" alt="Product Image"></image>
+<img className="prov-image" src={Img1} alt="Product Image"></img>
 <p className="prov-text">Retailers can enjoy the high quality and competitive price of our plastic products,and we had build a good relationship with retails across the world</p>
 </div>
 </div>
