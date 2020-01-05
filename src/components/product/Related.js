@@ -9,7 +9,10 @@ padding:10px 20px;
     font-size:1.5rem;
     font-weight:bold;
     color:white;
-    margin-bottom:10px;
+    margin-bottom:0.7rem;
+  border-bottom:solid 3px white;
+  display:inline-block;
+  line-height:1.4;
 }
 `;
 

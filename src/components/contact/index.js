@@ -7,6 +7,8 @@ border:solid 3px ${props=>props.theme.primary};
 width:100%;
 font-size:1rem;
 padding:8px 5px;
+box-sizing:border-box;
+background-color:white;
 /* display:inline-block; */
 
 `;
@@ -29,6 +31,7 @@ const CoRow = Styled.div`
 display:grid;
 grid-template-columns:60% 30%;
 padding:0 20px;
+justify-content:center;
 
 
 `;
@@ -81,21 +84,40 @@ flex-direction:column;
 
 .location{
 color:${props=>props.theme.primary}
-font-size:1.3rem;
+font-size:1.6rem;
 text-align:center;
+margin:10px 0;
+
+}
+.fas{
+    font-size:1.3rem;
+    margin-right:10px;
+}
+.fa-phone-alt{
+color:${props=>props.theme.primary};
+}
+.fa-map-marker-alt{
+color:red;
+}
+.fa-envelope{
+    color:${props=>props.theme.primary};
+
 }
 .phone{
     color:${props=>props.theme.primary}
-font-size:1.3rem;
+font-size:1.6rem;
 text-align:center;
+margin:10px 0;
 
 }
 .email{
     color:${props=>props.theme.primary}
-font-size:1.3rem;
+font-size:1.6rem;
 border:solid 3px ${props=>props.theme.primary};
-padding:5px 10px;
+padding:10px 15px;
 text-align:center;
+margin:10px 0;
+
 
 }
 `;
@@ -107,7 +129,8 @@ cols:30;
 rows:10;
 resize:none;
 outline:none;
-height:70px;
+/* height:70px; */
+box-sizing:border-box;
 
 `;
 
@@ -148,16 +171,16 @@ return(
 <TextInputField label="First Name"/>
 <TextInputField label="First Name"/>
 </div>
-<TextArea />
+<TextArea rows="10"/>
 <SubmitBtn>Submit</SubmitBtn>
 <p className="notice">Email will be send to seller007@joinplastic.com, if you do not get email sent 
 successful response,please alternatively Send email using your email client.</p>
 </DForm>
 </CoForm>
 <CoLinks>
-<p className="location">No 14, Omoniyi Abiri street,Tanke, Ilorin.</p>
-<p className="phone">07087000894</p>
-<p className="email">Rajiorazaq@gmail.com</p>
+<p className="location"><i class="fas fa-map-marker-alt"></i>No 14, Omoniyi Abiri street,Tanke, Ilorin.</p>
+<p className="phone"><i class="fas fa-phone-alt"></i>07087000894</p>
+<p className="email"><i class="fas fa-envelope"></i>Rajiorazaq@gmail.com</p>
 </CoLinks>
 </CoRow>
 </>

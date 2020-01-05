@@ -11,6 +11,7 @@ background-color:${props => props.theme.primary};
 /* padding:10px 20px; */
 .logo{
     font-size:30px;
+    color:white;
 }
 
 ul{

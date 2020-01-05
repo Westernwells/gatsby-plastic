@@ -2,14 +2,15 @@ import React from 'react'
 import Styled from 'styled-components'
 import Description from './Description'
 import Related from './Related'
-
+import SecNav from '../layout/SecNav'
 const ProdRow =Styled.div`
-
+background-color:white;
 `;
 const index =()=>{
     return(
 <ProdRow>
 {/**Description here */}
+<SecNav />
 <Description />
 <Details/>
 {/**Related here */}
@@ -22,14 +23,19 @@ const index =()=>{
 const DetSec = Styled.div`
 background-color:white;
 color:${props=>props.theme.primary};
-width:100%;
+/* width:100%; */
 padding:20px; 
 .det-header{
 font-size:1.5rem;
 font-weight:bold;
+margin-bottom:0.7rem;
+  border-bottom:solid 3px ${props =>props.theme.primary};
+  display:inline-block;
+  line-height:1.4;
+  /* width:100px; */
 }
 .det-det{
-
+font-size:1.2rem;
 }
 `;
 const Details =()=>{

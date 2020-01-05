@@ -6,6 +6,9 @@ import Img3 from '../../images/pro3.jpg'
 import Img4 from '../../images/pro4.jpg'
 import Img5 from '../../images/pro5.jpg'
 
+import TransitionLink from 'gatsby-plugin-transition-link'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 
 import Slider from "react-slick";
 import '../../slick/slick.css'
@@ -54,11 +57,17 @@ display:flex;
 flex-direction:column;
 background-color:white;
 padding:10px 20px 5px 20px;
+width:auto;
 .desc-header{
   font-size:1.3rem;
   font-weight:400;
   margin-top:0.2rem;
   margin-bottom:0.3rem;
+  border-bottom:solid 3px ${props =>props.theme.primary};
+  display:inline-block;
+  line-height:1.4;
+  width:100px;
+  
 }
 
 `;
@@ -230,7 +239,11 @@ const Description =()=>{
      
 
         </DescTable>
-        <ReqBtn>Request Free Quote</ReqBtn>
+        <ReqBtn>
+        <AniLink swipe direction="up" to="contact" hex="#663399" entryOffset={80}>
+        Request Free Quote
+      </AniLink>
+        </ReqBtn>
         <Tag>
         <p className="tag-header">Tags</p>
         <ul className="tags">
